@@ -1,8 +1,7 @@
 import { LitElement, html } from 'lit-element';
-
-import { VisibilityFilters, getVisibleTodoSelector } from '../redux/reducer';
 import { connect } from 'pwa-helpers';
 import { store } from '../redux/store';
+import { VisibilityFilters, getVisibleTodoSelector } from '../redux/reducer';
 
 import '@vaadin/vaadin-text-field';
 import '@vaadin/vaadin-button';
