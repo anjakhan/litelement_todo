@@ -1,7 +1,20 @@
 import { LitElement, html } from 'lit-element';
+<<<<<<< HEAD
 import { connect } from 'pwa-helpers';
 import { store } from '../redux/store';
 import { VisibilityFilters, getVisibleTodoSelector } from '../redux/reducer';
+
+import '@vaadin/vaadin-text-field';
+import '@vaadin/vaadin-button';
+import '@vaadin/vaadin-checkbox';
+import '@vaadin/vaadin-radio-button/vaadin-radio-button';
+import '@vaadin/vaadin-radio-button/vaadin-radio-group';
+=======
+
+import { VisibilityFilters, getVisibleTodoSelector } from '../redux/reducer';
+import { connect } from 'pwa-helpers';
+import { store } from '../redux/store';
+>>>>>>> eb978daee5678a1c889fafde689b1e1c2657fe97
 
 import '@vaadin/vaadin-text-field';
 import '@vaadin/vaadin-button';
