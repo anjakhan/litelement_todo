@@ -1,13 +1,14 @@
 import { LitElement, html } from 'lit-element';
-import '@vaadin/vaadin-text-field';
-import '@vaadin/vaadin-button';
-import '@vaadin/vaadin-checkbox';
-import '@vaadin/vaadin-radio-button/vaadin-radio-button';
-import '@vaadin/vaadin-radio-button/vaadin-radio-group'; 
 
 import { VisibilityFilters, getVisibleTodoSelector } from '../redux/reducer';
 import { connect } from 'pwa-helpers';
 import { store } from '../redux/store';
+
+import '@vaadin/vaadin-text-field';
+import '@vaadin/vaadin-button';
+import '@vaadin/vaadin-checkbox';
+import '@vaadin/vaadin-radio-button/vaadin-radio-button';
+import '@vaadin/vaadin-radio-button/vaadin-radio-group';
 
 import {
     addTodo,
@@ -17,7 +18,6 @@ import {
 } from '../redux/action.js';
 
 class TodoView extends connect(store)(LitElement) {
-
     static get properties() {
         return {
             todos: { type: Array },
